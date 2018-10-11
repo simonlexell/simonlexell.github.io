@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oppgave 2</title>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<script>
+
+    var canvas = document.getElementById("canvas");
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    var c = canvas.getContext("2d");
+
+    for (var i = 0; i < 1000; i += 10) {
+        c.beginPath();
+        c.moveTo(0, i);
+        c.lineTo(window.innerWidth, i);
+        c.stroke();
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
