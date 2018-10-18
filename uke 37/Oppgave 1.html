@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 1</title>
+</head>
+<body>
+<h1>Oppgave 1</h1>
+
+<h4>Del oppgave 1</h4>
+<button id="btn">Få opp listen over filmer</button>
+<div id="utskrift"></div>
+
+<h4>Del oppgave 2</h4>
+<button id="btn3">Film nr 3</button>
+<div id="utskrift3"></div>
+
+<h4>Del oppgave 3</h4>
+<input type= "text" id="SkrivInn">
+<button id="btnInput"> Trykk for å legge til en film</button>
+<div id="utskriftInput"></div>
+
+<script>
+
+    var btn = document.getElementById("btn");
+    var utskrift = document.getElementById("utskrift");
+    var btn3 = document.getElementById("btn3");
+    var utskrift3 = document.getElementById("utskrift3");
+    var skrivInn = document.getElementById("skrivInn");
+    var btnInput = document.getElementById("btnInput");
+    var utskriftInput = document.getElementById("utskriftInput");
+
+    var minArray = ["Hangover 2", " The Wolf of Wall Street", " Charterfeber", " Snabba Cash"];
+
+    //deloppgave 1
+    btn.onclick = function () {
+        utskrift.innerHTML = minArray
+
+    };
+
+    //deloppgave 2
+    btn3.onclick = function () {
+        utskrift3.innerHTML = minArray[2]
+    };
+
+    //del oppgave 3
+    btnInput.onclick = function () {
+        minArray.push(skrivInn.value);
+        utskriftInput.innerHTML = minArray;
+    };
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enkel Kalkulator</title>
+</head>
+<body>
+
+<input id="inpTall" type="number" placeholder="Skriv inn ditt tall">
+
+<input id="inpTall2" type="number" placeholder="Skriv inn ditt tall">
+
+<input id="inpFarge" type="color">
+
+<span id="spnResultat"></span>
+
+<br>
+
+<button id="btnRegnUt">Regn ut</button>
+
+<script>
+
+    var inpTall = document.getElementById("inpTall");
+    var inpTall2 = document.getElementById("inpTall2");
+
+    var spnResultat = document.getElementById("spnResultat");
+
+    var btnRegnUt = document.getElementById("btnRegnUt");
+
+    var inpFarge = document.getElementById("inpFarge");
+
+    inpFarge.onekeyup = function(){
+      document.body.style.backgroundColor = inpFarge.value;
+    };
+
+    // console.log(inpTall.value);
+
+    // spnResulat.innerHTML(inptall.value);
+
+    btnRegnUt.onclick = function() {
+        spnResultat.innerHTML = Number(inpTall.value) + Number(inpTall2.value);
+    }
+
+   inpFarge.onchange = function () {
+       document.body.style.backgroundColor = inpFarge.value;
+
+   };
+
+</script>
+
+
+
+</body>
+</html>

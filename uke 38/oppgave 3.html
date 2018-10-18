@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch setninger</title>
+</head>
+<body>
+
+<script>
+
+    var rådyr = prompt("Skriv inn ditt rådyr");
+    switch (rådyr){
+        case "Ulv":
+        case "ulv":
+        case "ULV":
+            document.write("Det er 33 ulver i Norge!");
+            document.body.style.backgroundColor = "cyan";
+            break;
+        case "Jerv":
+        case "jerv":
+        case "JERV":
+            document.write("Jasså, det er 34 jerv i Norge");
+            document.body.style.backgroundColor = "red";
+            break;
+        case "bjørn":
+        case "Bjørn":
+        case "BJØRN":
+            document.write("Jasså, det er 137 bjørner i Norge");
+            document.body.style.backgroundColor = "pink";
+            break;
+        case "Gaupe":
+        case "gaupe":
+        case "GAUPE":
+            document.write("Det er 350 gauper i Norge");
+            document.body.style.backgroundColor = "green";
+            break;
+        default:
+            document.write("Rådyret du søkte på ga ingen treff");
+            document.body.style.backgroundColor = "yellow";
+
+    }
+
+</script>
+
+</body>
+</html>

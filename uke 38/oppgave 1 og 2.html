@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch setninger</title>
+</head>
+<body>
+
+<script>
+
+    var mobil = prompt("Skriv inn hvilket merke mobil du har");
+    switch (mobil){
+        case "apple":
+        case "APPLE":
+        case "Apple":
+            document.write("Jasså, du har en iPhone");
+            document.body.style.backgroundColor = "cyan";
+            break;
+        case "nokia":
+        case "NOKIA":
+        case "Nokia":
+            document.write("Jasså, du har en Nokia mobil");
+            document.body.style.backgroundColor = "red";
+            break;
+        case "sony":
+        case "SONY":
+        case "Sony":
+            document.write("Jasså, du har en Sony mobil");
+            document.body.style.backgroundColor = "pink";
+            break;
+        case "samsung":
+        case "SAMSUNG":
+        case "Samsung":
+            document.write("Jasså, du har en Samsung mobil");
+            document.body.style.backgroundColor = "green";
+            break;
+        default:
+            document.write("Jasså, du har en rar mobil")
+            document.body.style.backgroundColor = "yellow";
+
+    }
+
+</script>
+
+</body>
+</html>

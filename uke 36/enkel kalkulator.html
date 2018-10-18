@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enkel Kalkulator</title>
+</head>
+<body>
+
+<input id="inpTall" type="number" placeholder="Skriv inn ditt tall">
+
+<span id="spnResultat"></span>
+
+<br>
+
+<button id="btnRegnUt">Regn ut</button>
+
+<script>
+
+ var inpTall = document.getElementById("inpTall");
+
+ var spnResultat = document.getElementById("spnResultat");
+
+ var btnRegnUt = document.getElementById("btnRegnUt");
+
+ // console.log(inpTall.value);
+
+ // spnResulat.innerHTML(inptall.value);
+
+    btnRegnUt.onclick = function() {
+        spnResultat.innerHTML = 20 + Number(inpTall.value);
+     }
+
+
+</script>
+
+
+
+</body>
+</html>

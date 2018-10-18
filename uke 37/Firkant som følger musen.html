@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>firkant som følger musen</title>
+
+    <style>
+
+     body {
+         cursor: none;
+     }
+
+        #firkant{
+         background-color: darkblue;
+         height: 100px;
+         width: 110px;
+
+          margin-left: 40px;
+          margin-top: 50px;
+          border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+
+<img src="zywiec.png" alt="" id="firkant">
+<!--<div id="firkant"></div>     -->
+
+<script>
+
+     var firkant = document.getElementById("firkant");
+    document.onmousemove = function () {
+         var X = event.clientX - 25;
+         var Y = event.clientY - 25;
+
+         console.log("x= " + X);
+         console.log("y= " + Y);
+
+         firkant.style.marginLeft = X + "px";
+         firkant.style.marginTop = Y + "px";
+
+
+    }
+
+</script>
+
+</body>
+</html>
