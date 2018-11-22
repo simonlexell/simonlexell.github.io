@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Club Guide</title>
+    <link rel="stylesheet" href="stilarkK.css">
     <style>
         h1 {
-             color: lightblue;
+             color: navy;
              text-align: center;
              font-family: Futura;
 
          }
 
         h2 {
-            color: darkblue;
+            color: #e47776;
             text-align: center;
             font-family: Futura;
 
@@ -23,7 +24,7 @@
         header {
             text-align: center;
             min-height: 100px;
-            background-color: lightyellow;
+            background-color: #fff2d8;
             color: lightblue;
             font-family: Futura;
         }
@@ -42,41 +43,57 @@
             color: lightblue;
         }
 
+        br {
+            text-align: center;
+            color: lightblue;
+            font-family: Futura;
+            min-height: 60px;
+            border: solid 1px black;
+        }
+        body {
+            background-image: url("stripes.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        header > nav > a {
+            background-color: #fff2d8;
+        }
+
     </style>
 
 </head>
 
 <body>
 <header>
-    <a href="Porsjekt.html"><h1 style="font-size:150px;">Club Guide</h1></a>
+    <a href="Porsjekt.html"><h1 style="font-size:120px;">Club Guide</h1></a>
 
     <nav>
-        <a href="Klubber.html" id="1" class="active">KLUBBER</a>
-        <a href="artister.html">ARTISTER</a>
-        <a href="Booking.html">BOOKING AV BORD</a>
-        <a href="Telling.html">TELLE APP</a>
-
+        <a href="Klubber.html" id="KLUBBER" class="active">KLUBBER</a>
+        <a href="artister.html" id="ARTISTER" class="active">ARTISTER</a>
+        <a href="Booking.html" id="BOOKING" class="active">BOOKING AV BORD</a>
+        <a href="Telling.html" id="TELLING" class="active">TELLE APP</a>
     </nav>
+
 </header>
 <h2 style="font-size:80px;">BOOKING AV BORD</h2>
 
-<form action="/action_page.php">
+<form action="/action_page.php" id="formen">
     Fornavn:<br>
-    <input type="text" name="Fornavn">
-    <br>
+    <input type="text" id="FORNAVN" name="Fornavn">
+    <br><br>
     Etternavn:<br>
-    <input type="text" name="Etternavn">
+    <input type="text" id="ETTERNAVN" name="Etternavn">
     <br><br>
     Email:<br>
-    <input type="text" name="Email">
+    <input type="text" id="EMAIL" name="Email">
     <br><br>
     Antall personer:<br>
-    <input type="text" name="Antall personer">
+    <input type="text" id="PERSONER" name="Antall personer">
     <br><br>
 
-
-    <input type="submit">
+    <a id="aa" href="kodd.html">Registrer</a>
 </form>
+
 
 <script>
 
